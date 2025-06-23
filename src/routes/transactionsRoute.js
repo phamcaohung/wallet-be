@@ -8,9 +8,9 @@ const router = express.Router()
 
 router.get("/:userId", getTransactionsByUserId)
 
-router.delete("/:id", createTransaction)
+router.delete("/:id", deleteTransaction)
 
-router.post("/", deleteTransaction)
+router.post("/", createTransaction)
 
 router.get("/summary/:userId", getSummaryByUserId)
 

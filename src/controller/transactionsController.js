@@ -18,7 +18,7 @@ export async function getTransactionsByUserId(req, res) {
     }
 }
 
-export async function createTransaction(req, res) {
+export async function deleteTransaction(req, res) {
     try {
         const { id } = req.params
 
@@ -40,7 +40,7 @@ export async function createTransaction(req, res) {
     }
 }
 
-export async function deleteTransaction(req, res) {
+export async function createTransaction(req, res) {
     try {
         const { title, amount, category, user_id } = req.body
 
